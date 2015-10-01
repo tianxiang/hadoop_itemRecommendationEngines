@@ -53,7 +53,7 @@ public class WordCount {
 						count = count + Integer.parseInt(entryValue.toString());
 						mw.put(entryKey, new IntWritable(count));
 					} else {
-						mw.put(entryKey, new IntWritable(1));
+						mw.put(entryKey, entryValue);
 					}
 				}
 			}
